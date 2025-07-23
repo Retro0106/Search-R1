@@ -1,5 +1,6 @@
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 export DATA_DIR='data/nq_search'
+export PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"
 
 WAND_PROJECT='Search-R1'
 
