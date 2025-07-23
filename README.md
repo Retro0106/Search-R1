@@ -145,6 +145,7 @@ bash train_ppo.sh #or train_grpo.sh
 conda activate retriever
 bash retrieval_launch.sh
 ```
+In retrieval_launch.sh file, change the save_path to your path
 
 (2) Run inference.
 ```bash
