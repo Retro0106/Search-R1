@@ -118,7 +118,7 @@ python scripts/data_process/nq_search.py
 (3) Launch a local retrieval server.
 ```bash
 conda activate retriever
-bash retrieval_launch.sh
+bash retrieval_launch.sh #In retrieval_launch.sh file, change the save_path to your path
 ```
 
 (4) Run RL training (PPO) with Llama-3.2-3b-base.
@@ -145,7 +145,6 @@ bash train_ppo.sh #or train_grpo.sh
 conda activate retriever
 bash retrieval_launch.sh
 ```
-In retrieval_launch.sh file, change the save_path to your path
 
 (2) Run inference.
 ```bash
