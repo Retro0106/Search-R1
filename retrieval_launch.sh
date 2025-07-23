@@ -1,7 +1,7 @@
 
-file_path=/the/path/you/save/corpus
-index_file=$file_path/e5_Flat.index
-corpus_file=$file_path/wiki-18.jsonl
+save_path=/the/path/you/save/corpus #Edit this
+index_file=$save_path/e5_Flat.index
+corpus_file=$save_path/wiki-18.jsonl
 retriever_name=e5
 retriever_path=intfloat/e5-base-v2
 
