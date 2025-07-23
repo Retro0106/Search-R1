@@ -104,7 +104,7 @@ Train a reasoning + search LLM on NQ dataset with e5 as the retriever and wikipe
 
 (1) Download the indexing and corpus.
 ```bash
-save_path=/the/path/to/save
+save_path=/the/path/to/save #Edit this
 python scripts/download.py --save_path $save_path
 cat $save_path/part_* > $save_path/e5_Flat.index
 gzip -d $save_path/wiki-18.jsonl.gz
@@ -124,7 +124,7 @@ bash retrieval_launch.sh
 (4) Run RL training (PPO) with Llama-3.2-3b-base.
 ```bash
 conda activate searchr1
-bash train_ppo.sh
+bash train_ppo.sh #or train_grpo.sh
 ```
 
 ## Preliminary results
