@@ -1,0 +1,4053 @@
+{
+  "compute_resource_configurations": [
+    {
+      "product": "High-Performance Compute Cluster",
+      "base_price": 15000,
+      "packages": [
+        {
+          "name": "Standard",
+          "price_modifier": 0,
+          "compute_units": [
+            { "type": "CPU", "options": [
+              { "model": "Intel Xeon Gold 6248", "price_modifier": 0 },
+              { "model": "AMD EPYC 7742", "price_modifier": 2000 }
+            ]},
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA A100", "price_modifier": 8000 },
+              { "model": "NVIDIA H100", "price_modifier": 12000 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "128GB DDR4", "price_modifier": 0 },
+            { "size": "256GB DDR4", "price_modifier": 1000 },
+            { "size": "512GB DDR5", "price_modifier": 2500 }
+          ],
+          "storage_options": [
+            { "type": "1TB SSD", "price_modifier": 0 },
+            { "type": "2TB NVMe", "price_modifier": 1500 },
+            { "type": "4TB NVMe", "price_modifier": 3000 }
+          ],
+          "features": [
+            { "feature": "InfiniBand Networking", "price_modifier": 5000 },
+            { "feature": "Container Runtime Pre-Installed", "price_modifier": 2000 },
+            { "feature": "Remote Management Module", "price_modifier": 1500 }
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_modifier": 8000,
+          "compute_units": [
+            { "type": "CPU", "options": [
+              { "model": "Intel Xeon Platinum 8280", "price_modifier": 3000 },
+              { "model": "AMD EPYC 9654", "price_modifier": 4000 }
+            ]},
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA H100 x2", "price_modifier": 25000 },
+              { "model": "NVIDIA L40S", "price_modifier": 18000 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "512GB DDR5", "price_modifier": 0 },
+            { "size": "1TB DDR5", "price_modifier": 3000 }
+          ],
+          "storage_options": [
+            { "type": "4TB NVMe RAID", "price_modifier": 0 },
+            { "type": "8TB NVMe RAID", "price_modifier": 4000 }
+          ],
+          "features": [
+            { "feature": "Cluster Management Dashboard", "price_modifier": 6000 },
+            { "feature": "High Availability Redundancy", "price_modifier": 7000 },
+            { "feature": "Dedicated Support Line", "price_modifier": 3000 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "AI Training Workstation",
+      "base_price": 12000,
+      "packages": [
+        {
+          "name": "Developer",
+          "price_modifier": 0,
+          "compute_units": [
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA RTX 4090", "price_modifier": 0 },
+              { "model": "NVIDIA RTX A6000", "price_modifier": 2500 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "64GB DDR4", "price_modifier": 0 },
+            { "size": "128GB DDR5", "price_modifier": 1500 }
+          ],
+          "storage_options": [
+            { "type": "1TB NVMe", "price_modifier": 0 },
+            { "type": "2TB NVMe", "price_modifier": 800 }
+          ],
+          "features": [
+            { "feature": "Docker & ML Frameworks Pre-installed", "price_modifier": 1000 }
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_modifier": 5000,
+          "compute_units": [
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA H100", "price_modifier": 15000 },
+              { "model": "NVIDIA L40S", "price_modifier": 10000 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "256GB DDR5", "price_modifier": 2000 }
+          ],
+          "storage_options": [
+            { "type": "4TB NVMe", "price_modifier": 1500 }
+          ],
+          "features": [
+            { "feature": "Kubernetes Setup", "price_modifier": 2500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Edge Computing Gateway",
+      "base_price": 5000,
+      "packages": [
+        {
+          "name": "Basic",
+          "price_modifier": 0,
+          "compute_units": [
+            { "type": "CPU", "options": [
+              { "model": "Intel i5", "price_modifier": 0 },
+              { "model": "Intel i7", "price_modifier": 800 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "16GB DDR4", "price_modifier": 0 },
+            { "size": "32GB DDR4", "price_modifier": 500 }
+          ],
+          "storage_options": [
+            { "type": "512GB SSD", "price_modifier": 0 },
+            { "type": "1TB SSD", "price_modifier": 300 }
+          ],
+          "features": [
+            { "feature": "Secure Boot", "price_modifier": 300 }
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_modifier": 2000,
+          "compute_units": [
+            { "type": "CPU", "options": [
+              { "model": "Intel Xeon D-2146NT", "price_modifier": 1000 }
+            ]}
+          ],
+          "memory_options": [
+            { "size": "64GB DDR4", "price_modifier": 800 }
+          ],
+          "storage_options": [
+            { "type": "2TB NVMe", "price_modifier": 1000 }
+          ],
+          "features": [
+            { "feature": "Edge AI Accelerator", "price_modifier": 2500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Cloud Backup Appliance",
+      "base_price": 7000,
+      "packages": [
+        {
+          "name": "Entry",
+          "price_modifier": 0,
+          "storage_options": [
+            { "type": "1TB HDD", "price_modifier": 0 },
+            { "type": "2TB SSD", "price_modifier": 1000 }
+          ],
+          "features": [
+            { "feature": "Basic Encryption", "price_modifier": 500 }
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price_modifier": 4000,
+          "storage_options": [
+            { "type": "10TB SSD RAID", "price_modifier": 3000 }
+          ],
+          "features": [
+            { "feature": "End-to-End Encryption", "price_modifier": 1000 },
+            { "feature": "Automated Snapshot Scheduling", "price_modifier": 1500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Container Orchestration Platform",
+      "base_price": 10000,
+      "packages": [
+        {
+          "name": "Standard",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "Kubernetes", "price_modifier": 0 },
+            { "feature": "Prometheus Monitoring", "price_modifier": 800 }
+          ]
+        },
+        {
+          "name": "Premium",
+          "price_modifier": 6000,
+          "features": [
+            { "feature": "Service Mesh Integration", "price_modifier": 2000 },
+            { "feature": "RBAC and SSO", "price_modifier": 1500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "AI Inference Server",
+      "base_price": 14000,
+      "packages": [
+        {
+          "name": "Lite",
+          "price_modifier": 0,
+          "compute_units": [
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA T4", "price_modifier": 0 },
+              { "model": "NVIDIA A10", "price_modifier": 2000 }
+            ]}
+          ]
+        },
+        {
+          "name": "Full",
+          "price_modifier": 9000,
+          "compute_units": [
+            { "type": "GPU", "options": [
+              { "model": "NVIDIA A100", "price_modifier": 8000 }
+            ]}
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Virtual Desktop Infrastructure",
+      "base_price": 8000,
+      "packages": [
+        {
+          "name": "Office",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "Windows 11 VM", "price_modifier": 0 },
+            { "feature": "VPN Access", "price_modifier": 300 }
+          ]
+        },
+        {
+          "name": "Developer",
+          "price_modifier": 2500,
+          "features": [
+            { "feature": "GPU Acceleration", "price_modifier": 1500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Database-as-a-Service",
+      "base_price": 6000,
+      "packages": [
+        {
+          "name": "PostgreSQL",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "Automated Backups", "price_modifier": 400 }
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "price_modifier": 2000,
+          "features": [
+            { "feature": "Sharding", "price_modifier": 1000 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Network Firewall Appliance",
+      "base_price": 3000,
+      "packages": [
+        {
+          "name": "Basic",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "IP Filtering", "price_modifier": 0 }
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price_modifier": 2000,
+          "features": [
+            { "feature": "Deep Packet Inspection", "price_modifier": 1500 },
+            { "feature": "Threat Intelligence Feed", "price_modifier": 800 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Enterprise VPN Gateway",
+      "base_price": 2500,
+      "packages": [
+        {
+          "name": "Remote Access",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "Split Tunneling", "price_modifier": 200 }
+          ]
+        },
+        {
+          "name": "Site-to-Site",
+          "price_modifier": 1500,
+          "features": [
+            { "feature": "IPSec Tunnels", "price_modifier": 500 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Cloud Monitoring System",
+      "base_price": 4000,
+      "packages": [
+        {
+          "name": "Essentials",
+          "price_modifier": 0,
+          "features": [
+            { "feature": "Metrics Dashboard", "price_modifier": 0 }
+          ]
+        },
+        {
+          "name": "Pro",
+          "price_modifier": 2500,
+          "features": [
+            { "feature": "Anomaly Detection", "price_modifier": 1200 }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Data Science Workbench",
+      "base_price": 18317,
+      "packages": [
+        {
+          "name": "Explorer",
+          "price_modifier": 7461,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 208
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 8476
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 542
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1470
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 940
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 3382
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 3007
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 2621
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 3492
+            }
+          ]
+        },
+        {
+          "name": "Researcher",
+          "price_modifier": 4624,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1676
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 5011
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 363
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1308
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3997
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3834
+            }
+          ],
+          "features": [
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 1268
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2832
+            },
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 3673
+            }
+          ]
+        },
+        {
+          "name": "Enterprise Lab",
+          "price_modifier": 5720,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1481
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 8252
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2439
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1349
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3192
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2398
+            }
+          ],
+          "features": [
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 763
+            },
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 2454
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 3331
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Visualization Server",
+      "base_price": 7501,
+      "packages": [
+        {
+          "name": "GraphCore",
+          "price_modifier": 3100,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7513",
+                  "price_modifier": 1577
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 11561
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 503
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1793
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1556
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 267
+            }
+          ],
+          "features": [
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 3850
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 1449
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 3741
+            }
+          ]
+        },
+        {
+          "name": "Insight Pro",
+          "price_modifier": 400,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1108
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 8011
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2834
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2608
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 126
+            },
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1572
+            }
+          ],
+          "features": [
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 2970
+            },
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 2990
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2089
+            }
+          ]
+        },
+        {
+          "name": "Vision Suite",
+          "price_modifier": 3142,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7513",
+                  "price_modifier": 1589
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 7113
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1302
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 224
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 1228
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 3771
+            }
+          ],
+          "features": [
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 2992
+            },
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 2917
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2422
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Security Audit Appliance",
+      "base_price": 10792,
+      "packages": [
+        {
+          "name": "Threat Monitor",
+          "price_modifier": 2816,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 165
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 12125
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 598
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 822
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 1510
+            },
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1360
+            }
+          ],
+          "features": [
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 1790
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 1213
+            },
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 1260
+            }
+          ]
+        },
+        {
+          "name": "Compliance Shield",
+          "price_modifier": 1794,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1438
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 3597
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1295
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1110
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3388
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 97
+            }
+          ],
+          "features": [
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 1459
+            },
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 3258
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 811
+            }
+          ]
+        },
+        {
+          "name": "AuditX Enterprise",
+          "price_modifier": 5420,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 1668
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 10005
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 698
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1705
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2852
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1493
+            }
+          ],
+          "features": [
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 2491
+            },
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 3812
+            },
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 1711
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "System Telemetry Monitor",
+      "base_price": 11466,
+      "packages": [
+        {
+          "name": "Core Metrics",
+          "price_modifier": 979,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 313
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 4955
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2754
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 724
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 355
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3922
+            }
+          ],
+          "features": [
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 911
+            },
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 729
+            },
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 3535
+            }
+          ]
+        },
+        {
+          "name": "Performance Pulse",
+          "price_modifier": 6927,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 1771
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 3281
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2642
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1606
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3039
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 1652
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 688
+            },
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 1992
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 3697
+            }
+          ]
+        },
+        {
+          "name": "OpsVision",
+          "price_modifier": 6459,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1798
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 11231
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 893
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 332
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 2505
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 344
+            }
+          ],
+          "features": [
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 3586
+            },
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 1264
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 1376
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Model Training Unit",
+      "base_price": 7354,
+      "packages": [
+        {
+          "name": "TrainLite",
+          "price_modifier": 3044,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 460
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 13931
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 677
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2571
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2695
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3485
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 992
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 1376
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 3616
+            }
+          ]
+        },
+        {
+          "name": "TrainPro",
+          "price_modifier": 9721,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7513",
+                  "price_modifier": 192
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 2238
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1628
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 226
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 884
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 162
+            }
+          ],
+          "features": [
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 604
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 1441
+            },
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 3654
+            }
+          ]
+        },
+        {
+          "name": "TrainMax AI",
+          "price_modifier": 4943,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7513",
+                  "price_modifier": 940
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 12503
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1429
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2643
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3905
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3064
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 2238
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2720
+            },
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 1516
+            }
+          ]
+        }
+      ]
+    },
+          {
+      "product": "Inference Workstation",
+      "base_price": 6342,
+      "packages": [
+        {
+          "name": "Edge Predictor",
+          "price_modifier": 7830,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 5522
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1029
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2902
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1994
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 311
+            }
+          ],
+          "features": [
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 2085
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 3351
+            }
+          ]
+        },
+        {
+          "name": "Batch Inference Engine",
+          "price_modifier": 1293,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 9637
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1707
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 383
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3473
+            },
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1505
+            }
+          ],
+          "features": [
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 1024
+            }
+          ]
+        },
+        {
+          "name": "Real-time InferX",
+          "price_modifier": 9021,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 639
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 3662
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2177
+            }
+          ],
+          "features": [
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 2394
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Workflow Accelerator",
+      "base_price": 14264,
+      "packages": [
+        {
+          "name": "FlowStart",
+          "price_modifier": 8153,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 1403
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1361
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2722
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3125
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2664
+            }
+          ]
+        },
+        {
+          "name": "Pipeline Booster",
+          "price_modifier": 4809,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Gold 6338",
+                  "price_modifier": 1163
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1576
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1031
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1562
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3495
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 2548
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 3339
+            },
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 1872
+            }
+          ]
+        },
+        {
+          "name": "TurboFlow",
+          "price_modifier": 9367,
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2912
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1786
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 834
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 2450
+            }
+          ],
+          "features": [
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 1241
+            },
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 691
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "AutoML Workstation",
+      "base_price": 14592,
+      "packages": [
+        {
+          "name": "AutoTune",
+          "price_modifier": 6901,
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 28
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 695
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1319
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 2591
+            }
+          ]
+        },
+        {
+          "name": "HyperParam Pro",
+          "price_modifier": 3200,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7513",
+                  "price_modifier": 974
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 12199
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 35
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2014
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 1551
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 3054
+            }
+          ],
+          "features": [
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 3637
+            },
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 3081
+            },
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2453
+            }
+          ]
+        },
+        {
+          "name": "ModelCraft",
+          "price_modifier": 2248,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 1296
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2527
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1764
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 3684
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 1387
+            }
+          ],
+          "features": [
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 2287
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "GPU Compute Rack",
+      "base_price": 11362,
+      "packages": [
+        {
+          "name": "Core Rack",
+          "price_modifier": 2228,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 14343
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1700
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2145
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 85
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 2343
+            }
+          ],
+          "features": [
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 1682
+            }
+          ]
+        },
+        {
+          "name": "Parallel Pack",
+          "price_modifier": 8216,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA H100",
+                  "price_modifier": 8894
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 572
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 408
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 426
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 1363
+            }
+          ],
+          "features": [
+            {
+              "feature": "Dedicated Support Line",
+              "price_modifier": 2794
+            }
+          ]
+        },
+        {
+          "name": "AccelX",
+          "price_modifier": 3528,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 3661
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 2999
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 656
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Compute Node",
+      "base_price": 7100,
+      "packages": [
+        {
+          "name": "Compute Basic",
+          "price_modifier": 8681,
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1846
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2347
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 898
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 201
+            }
+          ],
+          "features": [
+            {
+              "feature": "Kubernetes Support",
+              "price_modifier": 545
+            },
+            {
+              "feature": "Metrics Dashboard",
+              "price_modifier": 3128
+            }
+          ]
+        },
+        {
+          "name": "Compute Pro",
+          "price_modifier": 6785,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA RTX 6000 Ada",
+                  "price_modifier": 6923
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1249
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 932
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 392
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 789
+            }
+          ]
+        },
+        {
+          "name": "Compute Elastic",
+          "price_modifier": 2440,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Platinum 8358",
+                  "price_modifier": 1034
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 608
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2482
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2077
+            },
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3174
+            }
+          ],
+          "features": [
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 3218
+            },
+            {
+              "feature": "Secure Boot",
+              "price_modifier": 815
+            },
+            {
+              "feature": "Prometheus Monitoring",
+              "price_modifier": 2913
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Remote Render Node",
+      "base_price": 7814,
+      "packages": [
+        {
+          "name": "RenderLite",
+          "price_modifier": 2183,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 200
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 780
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3220
+            },
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3496
+            }
+          ],
+          "features": [
+            {
+              "feature": "Service Mesh Integration",
+              "price_modifier": 3848
+            },
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 1229
+            }
+          ]
+        },
+        {
+          "name": "RenderPro",
+          "price_modifier": 7218,
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2100
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 138
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3982
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 3113
+            }
+          ],
+          "features": [
+            {
+              "feature": "RBAC and SSO",
+              "price_modifier": 3255
+            },
+            {
+              "feature": "AI Model Serving",
+              "price_modifier": 1540
+            }
+          ]
+        },
+        {
+          "name": "StudioCore",
+          "price_modifier": 1666,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 11643
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1287
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 426
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB NVMe",
+              "price_modifier": 3843
+            },
+            {
+              "type": "4TB NVMe RAID",
+              "price_modifier": 347
+            }
+          ]
+        }
+      ]
+    },
+          {
+      "product": "Backup Automation Engine",
+      "base_price": 8943,
+      "packages": [
+        {
+          "name": "AutoSafe",
+          "price_modifier": 6568,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 989
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1621
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1477
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 477
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 784
+            }
+          ],
+          "features": [
+            {
+              "feature": "Log Compression",
+              "price_modifier": 2879
+            }
+          ]
+        },
+        {
+          "name": "RedundancyPlus",
+          "price_modifier": 782,
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 984
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 494
+            }
+          ]
+        },
+        {
+          "name": "VaultSync",
+          "price_modifier": 99,
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1458
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1238
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 706
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 437
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 747
+            },
+            {
+              "feature": "Log Compression",
+              "price_modifier": 1899
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Distributed Cache Node",
+      "base_price": 9501,
+      "packages": [
+        {
+          "name": "CacheLite",
+          "price_modifier": 3907,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Silver 4310",
+                  "price_modifier": 1172
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2993
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 210
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 609
+            }
+          ]
+        },
+        {
+          "name": "CacheStream",
+          "price_modifier": 5522,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 1010
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2502
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 447
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2520
+            }
+          ]
+        },
+        {
+          "name": "CacheBurst",
+          "price_modifier": 1393,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 1373
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2962
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1865
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 915
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ML Research Pod",
+      "base_price": 8935,
+      "packages": [
+        {
+          "name": "LabSeed",
+          "price_modifier": 4147,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1121
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 297
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 1547
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1351
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 801
+            }
+          ]
+        },
+        {
+          "name": "Experiment Pro",
+          "price_modifier": 6345,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Silver 4310",
+                  "price_modifier": 845
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1495
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 138
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 405
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2619
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 1692
+            }
+          ]
+        },
+        {
+          "name": "DeepThinker",
+          "price_modifier": 3719,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2789
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1563
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 668
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1438
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 840
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "AI Optimization Platform",
+      "base_price": 14862,
+      "packages": [
+        {
+          "name": "OptiCore",
+          "price_modifier": 82,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A10",
+                  "price_modifier": 3448
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 306
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1764
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 2084
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 798
+            }
+          ]
+        },
+        {
+          "name": "TunePro",
+          "price_modifier": 5628,
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1247
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1669
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 1646
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1228
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 2937
+            },
+            {
+              "feature": "Log Compression",
+              "price_modifier": 1623
+            }
+          ]
+        },
+        {
+          "name": "AutoSmart",
+          "price_modifier": 3528,
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 517
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 149
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 934
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Streaming Ingestion Agent",
+      "base_price": 9842,
+      "packages": [
+        {
+          "name": "StreamLite",
+          "price_modifier": 3674,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 391
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 3834
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 373
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 64
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 1687
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2576
+            }
+          ]
+        },
+        {
+          "name": "FlowIngest",
+          "price_modifier": 3030,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1064
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1526
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 871
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 318
+            }
+          ]
+        },
+        {
+          "name": "EventCapturer",
+          "price_modifier": 3411,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 852
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A10",
+                  "price_modifier": 2210
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1271
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1835
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 1134
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Log Analysis Console",
+      "base_price": 14464,
+      "packages": [
+        {
+          "name": "LogView",
+          "price_modifier": 744,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7313",
+                  "price_modifier": 160
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 1856
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1170
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 651
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 1723
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1333
+            }
+          ]
+        },
+        {
+          "name": "PatternScope",
+          "price_modifier": 5342,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1003
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1428
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 401
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 493
+            }
+          ]
+        },
+        {
+          "name": "Anomalyze",
+          "price_modifier": 1479,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 1898
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1471
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 615
+            }
+          ],
+          "features": [
+            {
+              "feature": "Encryption at Rest",
+              "price_modifier": 1739
+            },
+            {
+              "feature": "Load Adaptive Caching",
+              "price_modifier": 2964
+            }
+          ]
+        }
+      ]
+    },
+          {
+      "product": "Event Correlation Hub",
+      "base_price": 10388,
+      "packages": [
+        {
+          "name": "SignalMerge",
+          "price_modifier": 501,
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1310
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 2139
+            }
+          ]
+        },
+        {
+          "name": "AlertFusion",
+          "price_modifier": 2826,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7402P",
+                  "price_modifier": 292
+                }
+              ]
+            }
+          ],
+          "features": [
+            {
+              "feature": "Multi-Source Aggregation",
+              "price_modifier": 414
+            }
+          ]
+        },
+        {
+          "name": "IncidentIQ",
+          "price_modifier": 2786,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 1612
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 22
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1937
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Data Archiver",
+      "base_price": 6562,
+      "packages": [
+        {
+          "name": "ColdVault",
+          "price_modifier": 3697,
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 354
+            },
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 755
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "512GB SSD",
+              "price_modifier": 100
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1601
+            }
+          ]
+        },
+        {
+          "name": "ArchiveNow",
+          "price_modifier": 4333,
+          "memory_options": [
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 74
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 161
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 85
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1545
+            }
+          ],
+          "features": [
+            {
+              "feature": "Interactive Visualization",
+              "price_modifier": 949
+            }
+          ]
+        },
+        {
+          "name": "LongTermStore",
+          "price_modifier": 5123,
+          "memory_options": [
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 460
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 339
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 300
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 2203
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Data Lake Interface",
+      "base_price": 12677,
+      "packages": [
+        {
+          "name": "LakeView",
+          "price_modifier": 5786,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon E5-2650",
+                  "price_modifier": 788
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 601
+            },
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 1365
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1667
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 1881
+            }
+          ]
+        },
+        {
+          "name": "AquaBridge",
+          "price_modifier": 4091,
+          "memory_options": [
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 422
+            },
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 589
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 2291
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1361
+            }
+          ],
+          "features": [
+            {
+              "feature": "User Session Persistence",
+              "price_modifier": 1658
+            },
+            {
+              "feature": "Audit Logging",
+              "price_modifier": 754
+            }
+          ]
+        },
+        {
+          "name": "QuerySurface",
+          "price_modifier": 5679,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7402P",
+                  "price_modifier": 411
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A2",
+                  "price_modifier": 1800
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 1157
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 316
+            }
+          ],
+          "features": [
+            {
+              "feature": "User Session Persistence",
+              "price_modifier": 1086
+            },
+            {
+              "feature": "Audit Logging",
+              "price_modifier": 953
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Elastic Query Engine",
+      "base_price": 6400,
+      "packages": [
+        {
+          "name": "QueryDash",
+          "price_modifier": 5612,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7402P",
+                  "price_modifier": 1200
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2223
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 173
+            },
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1421
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 834
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 2167
+            }
+          ],
+          "features": [
+            {
+              "feature": "Interactive Visualization",
+              "price_modifier": 567
+            },
+            {
+              "feature": "Audit Logging",
+              "price_modifier": 452
+            }
+          ]
+        },
+        {
+          "name": "FlexFetch",
+          "price_modifier": 4864,
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1336
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 2471
+            }
+          ],
+          "features": [
+            {
+              "feature": "Multi-Source Aggregation",
+              "price_modifier": 914
+            }
+          ]
+        },
+        {
+          "name": "ElasticInsight",
+          "price_modifier": 352,
+          "memory_options": [
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 1252
+            },
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 192
+            }
+          ],
+          "features": [
+            {
+              "feature": "Query Optimization Engine",
+              "price_modifier": 2335
+            },
+            {
+              "feature": "User Session Persistence",
+              "price_modifier": 2405
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Virtual Lab Suite",
+      "base_price": 5827,
+      "packages": [
+        {
+          "name": "LabBasic",
+          "price_modifier": 4160,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon E5-2650",
+                  "price_modifier": 1163
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 1283
+            },
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 1223
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 589
+            },
+            {
+              "type": "1TB SSD",
+              "price_modifier": 607
+            }
+          ]
+        },
+        {
+          "name": "LabAdvanced",
+          "price_modifier": 2337,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon E5-2650",
+                  "price_modifier": 238
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 1295
+            },
+            {
+              "size": "64GB DDR5",
+              "price_modifier": 606
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB SSD",
+              "price_modifier": 1291
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2105
+            }
+          ]
+        },
+        {
+          "name": "LabEnterprise",
+          "price_modifier": 3375,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon E5-2650",
+                  "price_modifier": 1046
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA T4",
+                  "price_modifier": 2712
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "32GB DDR4",
+              "price_modifier": 286
+            },
+            {
+              "size": "16GB DDR4",
+              "price_modifier": 1138
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2031
+            },
+            {
+              "type": "512GB SSD",
+              "price_modifier": 893
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Federated Learning Hub",
+      "base_price": 24191,
+      "packages": [
+        {
+          "name": "NodeBridge",
+          "price_modifier": 8091,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA L40S",
+                  "price_modifier": 4682
+                }
+              ]
+            }
+          ],
+          "features": [
+            {
+              "feature": "Differential Privacy",
+              "price_modifier": 2625
+            },
+            {
+              "feature": "Multi-Zone Load Sensing",
+              "price_modifier": 2171
+            }
+          ]
+        },
+        {
+          "name": "CrossLearn Pro",
+          "price_modifier": 6559,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Scalable",
+                  "price_modifier": 1825
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2443
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2656
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 2187
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 4312
+            }
+          ]
+        },
+        {
+          "name": "PrivacyTrain",
+          "price_modifier": 1646,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon Scalable",
+                  "price_modifier": 1983
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1445
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2468
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3221
+            },
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 4353
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Zero Trust Access Controller",
+      "base_price": 13885,
+      "packages": [
+        {
+          "name": "TrustLite",
+          "price_modifier": 8861,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC Milan",
+                  "price_modifier": 1216
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 8468
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2961
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2646
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 4611
+            },
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 2314
+            }
+          ],
+          "features": [
+            {
+              "feature": "Differential Privacy",
+              "price_modifier": 3817
+            },
+            {
+              "feature": "Federated Aggregation",
+              "price_modifier": 2564
+            }
+          ]
+        },
+        {
+          "name": "SecureEdge",
+          "price_modifier": 3109,
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1911
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2758
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2346
+            },
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 2993
+            }
+          ]
+        },
+        {
+          "name": "ZTX Guardian",
+          "price_modifier": 6231,
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1737
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2729
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3769
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 3927
+            }
+          ],
+          "features": [
+            {
+              "feature": "Differential Privacy",
+              "price_modifier": 2461
+            },
+            {
+              "feature": "Bias Mitigation Module",
+              "price_modifier": 3323
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Quantum Simulation Node",
+      "base_price": 12810,
+      "packages": [
+        {
+          "name": "QSim Core",
+          "price_modifier": 1515,
+          "storage_options": [
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 3178
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 4645
+            }
+          ]
+        },
+        {
+          "name": "EntangleX",
+          "price_modifier": 1388,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 9178
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1428
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1986
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 3260
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 4825
+            }
+          ],
+          "features": [
+            {
+              "feature": "Federated Aggregation",
+              "price_modifier": 3524
+            }
+          ]
+        },
+        {
+          "name": "QuantumStack",
+          "price_modifier": 7601,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1867
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1612
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 3328
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1762
+            }
+          ],
+          "features": [
+            {
+              "feature": "Multi-Zone Load Sensing",
+              "price_modifier": 810
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "AI Ethics Compliance Engine",
+      "base_price": 8379,
+      "packages": [
+        {
+          "name": "FairAudit",
+          "price_modifier": 3511,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA L40S",
+                  "price_modifier": 6553
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2205
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1735
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2311
+            },
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 3252
+            }
+          ]
+        },
+        {
+          "name": "BiasCheck Pro",
+          "price_modifier": 4528,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2164
+            },
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2099
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 4545
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 1637
+            }
+          ]
+        },
+        {
+          "name": "EthosShield",
+          "price_modifier": 9721,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC Milan",
+                  "price_modifier": 1021
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A100",
+                  "price_modifier": 5282
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1652
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1187
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2799
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 3803
+            }
+          ],
+          "features": [
+            {
+              "feature": "Anomaly Flagging",
+              "price_modifier": 3825
+            },
+            {
+              "feature": "Quantum Emulation Mode",
+              "price_modifier": 2407
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Intelligent Load Balancer",
+      "base_price": 13450,
+      "packages": [
+        {
+          "name": "SmartFlow",
+          "price_modifier": 6071,
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2260
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2312
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 2426
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 3540
+            }
+          ],
+          "features": [
+            {
+              "feature": "Quantum Emulation Mode",
+              "price_modifier": 3682
+            },
+            {
+              "feature": "Bias Mitigation Module",
+              "price_modifier": 1962
+            }
+          ]
+        },
+        {
+          "name": "AutoScaleX",
+          "price_modifier": 9782,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC Milan",
+                  "price_modifier": 1173
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 2155
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1567
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB NVMe",
+              "price_modifier": 4365
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 4139
+            }
+          ],
+          "features": [
+            {
+              "feature": "Multi-Zone Load Sensing",
+              "price_modifier": 2488
+            }
+          ]
+        },
+        {
+          "name": "DemandBalancer",
+          "price_modifier": 1354,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA L40S",
+                  "price_modifier": 5330
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "512GB DDR5",
+              "price_modifier": 1003
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2292
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 4110
+            },
+            {
+              "type": "8TB SSD RAID",
+              "price_modifier": 2483
+            }
+          ],
+          "features": [
+            {
+              "feature": "Quantum Emulation Mode",
+              "price_modifier": 623
+            },
+            {
+              "feature": "Differential Privacy",
+              "price_modifier": 3023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Synthetic Data Generator",
+      "base_price": 6235,
+      "packages": [
+        {
+          "name": "GenForge",
+          "price_modifier": 4449,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon 4314",
+                  "price_modifier": 1518
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A10",
+                  "price_modifier": 3442
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1574
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1349
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1586
+            },
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 1987
+            }
+          ]
+        },
+        {
+          "name": "DataSynth Pro",
+          "price_modifier": 7761,
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1199
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1474
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2985
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2334
+            }
+          ],
+          "features": [
+            {
+              "feature": "Anonymized Data Output",
+              "price_modifier": 1917
+            },
+            {
+              "feature": "Load Isolation",
+              "price_modifier": 623
+            }
+          ]
+        },
+        {
+          "name": "SimulMatrix",
+          "price_modifier": 3090,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1999
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1071
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1945
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1081
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Digital Twin Builder",
+      "base_price": 8725,
+      "packages": [
+        {
+          "name": "TwinBasic",
+          "price_modifier": 6561,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1950
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2284
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 2245
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1705
+            }
+          ]
+        },
+        {
+          "name": "MirrorCraft",
+          "price_modifier": 6709,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2054
+            },
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2216
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 3233
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2964
+            }
+          ]
+        },
+        {
+          "name": "ReplicaMax",
+          "price_modifier": 6157,
+          "compute_units": [
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA L4",
+                  "price_modifier": 6241
+                }
+              ]
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 2285
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 1083
+            }
+          ],
+          "features": [
+            {
+              "feature": "Anonymized Data Output",
+              "price_modifier": 1105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "High-Throughput Data Router",
+      "base_price": 18304,
+      "packages": [
+        {
+          "name": "DataPulse",
+          "price_modifier": 3205,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "Intel Xeon 4314",
+                  "price_modifier": 1625
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA A10",
+                  "price_modifier": 6026
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2174
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2268
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 3313
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 1543
+            }
+          ]
+        },
+        {
+          "name": "StreamSwitch",
+          "price_modifier": 3668,
+          "memory_options": [
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1105
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1548
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 3090
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2829
+            }
+          ],
+          "features": [
+            {
+              "feature": "Access Logging",
+              "price_modifier": 2877
+            }
+          ]
+        },
+        {
+          "name": "RouteXpress",
+          "price_modifier": 2079,
+          "memory_options": [
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2494
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 1912
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2839
+            },
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 1043
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Secure Model Deployment Gateway",
+      "base_price": 12400,
+      "packages": [
+        {
+          "name": "ModelSafe",
+          "price_modifier": 3220,
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 1247
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 2051
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 2651
+            },
+            {
+              "type": "1TB NVMe",
+              "price_modifier": 2995
+            }
+          ],
+          "features": [
+            {
+              "feature": "Load Isolation",
+              "price_modifier": 556
+            },
+            {
+              "feature": "Real-time Stream Control",
+              "price_modifier": 914
+            }
+          ]
+        },
+        {
+          "name": "DeployGuard",
+          "price_modifier": 5133,
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2380
+            },
+            {
+              "size": "256GB DDR5",
+              "price_modifier": 1665
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2031
+            },
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 3415
+            }
+          ],
+          "features": [
+            {
+              "feature": "Deployment Policy Engine",
+              "price_modifier": 2838
+            }
+          ]
+        },
+        {
+          "name": "InferLink",
+          "price_modifier": 7307,
+          "compute_units": [
+            {
+              "type": "CPU",
+              "options": [
+                {
+                  "model": "AMD EPYC 7452",
+                  "price_modifier": 1230
+                }
+              ]
+            },
+            {
+              "type": "GPU",
+              "options": [
+                {
+                  "model": "NVIDIA L4",
+                  "price_modifier": 6779
+                }
+              ]
+            }
+          ],
+          "memory_options": [
+            {
+              "size": "64GB DDR4",
+              "price_modifier": 2364
+            },
+            {
+              "size": "128GB DDR5",
+              "price_modifier": 2016
+            }
+          ],
+          "storage_options": [
+            {
+              "type": "4TB SSD RAID",
+              "price_modifier": 2412
+            },
+            {
+              "type": "2TB NVMe",
+              "price_modifier": 2068
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+  
